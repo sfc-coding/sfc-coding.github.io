@@ -1,0 +1,56 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 2000% 2000%;
+    animation: gradient 15s ease infinite;
+    font-family: Bahnschrift;
+    color: white;
+    text-align: center;
+}
+
+p{
+    font-size: large;
+    transition: margin-right 5s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  
+  .opportunity{
+      -moz-animation: cssAnimation 6s ease-in;
+      /* Firefox */
+      -webkit-animation: cssAnimation 6s ease-in;
+      /* Safari and Chrome */
+      -o-animation: cssAnimation 6s ease-in;
+      /* Opera */
+      animation: cssAnimation 6s ease-in;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+  }
+  @keyframes cssAnimation {
+    0%   {opacity: 0;display:none;}
+    /* 2 sec : start fading in*/
+    30%   {opacity: 0;display:block;}
+    /* 2.5 sec : visible */
+    40%   {opacity: 1;display:block;}
+    /* 4.5 sec : start fading out */
+    70%   {opacity: 1;display:block;}
+  }
+  @-webkit-keyframes cssAnimation {
+    0%   {opacity: 0;display:none;}
+    /* 2 sec : start fading in*/
+    30%   {opacity: 0;display:block;}
+    /* 2.5 sec : visible */
+    40%   {opacity: 1;display:block;}
+    /* 4.5 sec : start fading out */
+    70%   {opacity: 1;display:block;}
+  }
