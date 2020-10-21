@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Coding Lessons Online!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Learn To Code</title>
+</head>
+
+<body onload="typeWriter()">
+    <div>
+        <div class="page-bg"></div>
+        <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        </div>
+    </div>
+    
+
+    <h1 id="title"></h1>
+    <div class="opportunity">
+    <p>Your school has provided you with a free opportunity to learn code!</p>
+    <p>Learn the fundamentals of coding, how to build a web scraper, and an AI bot for <b>FREE!</b></p>
+    
+    <p><b>Places are limited</b></p>
+    <p>Dates: xxxx</p>
+    <p><b>Sign up below:</b></p>
+    </div>
+
+    <script >
+        var i = 0;
+        var txt = 'Want To Start Learning Code...?'; /* The text */
+        var speed = 70; /* The speed/duration of the effect in milliseconds */
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+
+        }
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
